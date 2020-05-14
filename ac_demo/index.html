@@ -70,16 +70,19 @@ p.thicker {font-weight: 900}
     <div class="container">
       <div class="row" id="monolingual">
         <div class="col">
-          <h2>Notes</h2>
+          <h2>Abstract</h2>
           <div>
-            <p> ZHAA's native language is Arabic</p>
-	    <p>	Dataset (L2-ARCTIC corpus) <a class="text-success" href="#1">[1]</a>: https://psi.engr.tamu.edu/l2-arctic-corpus</p>
-	    <p>	Please view this page in Google Chrome or Microsoft Edge for best quality</p>
+            <p> Accent conversion (AC) transfers a non-native speaker's accent into native accent while maintaining the speaker's timbre. 
+		Existing methods generate speech of inferior quality or lacked control of prosody. Moreover, after conversion, the trade-off between naturalness, accent and voice quality confines the application potential of this technology. 
+		Inspired by phonetic posteriorgrams (PPGs) framework, in this paper we propose an accent conversion scheme to address these challenges. 
+		To remove the reliance of ground truth audio on native accent at conversion stage, we first build a native accent text-to-speech (TTS) system to generate native utterances as inputs of the conversion model, which makes the robust system less susceptible to the possible side effects of input audio quality and noise. 
+		An acoustic or linguistic reference encoder is used to improve the stability, naturalness and accentedness of generated audio. Meanwhile we optimize model architecture to elevate synthesized performance, and speedup training and inference. Neural vocoder WaveRNN is used to covert mels to waveform in high fidelity. 
+		Subjective listening tests show that compared with the baseline system, the proposed system can convert Arabic-accented English into native American English with significantly improved clarity, naturalness and voice similarity, substantially reducing the perceived non-native accent.</p>
           </div>
         </div>
       </div>
       </div>
-      <hr>
+    <hr>
     <div class="container">
       <div class="row" id="monolingual">
         <div class="col">
