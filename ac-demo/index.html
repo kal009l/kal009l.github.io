@@ -72,7 +72,7 @@ p.thicker {font-weight: 900}
         <div class="col">
           <h2>Abstract</h2>
           <div>
-            <p align=”justify”> Accent conversion (AC) transforms a non-native speaker's accent into a native accent while maintaining the speaker's voice timbre. In this paper, we propose approaches to improving accent conversion applicability, as well as quality. First of all, we assume no reference speech is available at the conversion stage, and hence we employ an end-to-end text-to-speech system that is trained on native speech to generate native reference speech. To improve the quality and accent of the converted speech, we introduce reference encoders which make us capable of utilizing multi-source information. This is motivated by acoustic features extracted from native reference and linguistic information, which are complementary to conventional phonetic posteriorgrams (PPGs), so they can be concatenated as features to improve a baseline system based only on PPGs. Moreover, we optimize model architecture using GMM-based attention instead of windowed attention to elevate synthesized performance. Experimental results indicate when the proposed techniques are applied the integrated system significantly raises the scores of acoustic quality (30% relative increase in mean opinion score) and native accent (68% relative preference) while retaining the voice identity of the non-native speaker.</p>
+            <p align=”justify”> Accent conversion (AC) transforms a non-native speaker's accent into a native accent while maintaining the speaker's voice timbre. In this paper, we propose approaches to improving accent conversion applicability, as well as quality. First of all, we assume no reference speech is available at the conversion stage, and hence we employ an end-to-end text-to-speech system that is trained on native speech to generate native reference speech. To improve the quality and accent of the converted speech, we introduce reference encoders which make us capable of utilizing multi-source information. This is motivated by acoustic features extracted from native reference and linguistic information, which are complementary to conventional phonetic posteriorgrams (PPGs), so they can be concatenated as features to improve a baseline system based only on PPGs. Moreover, we optimize model architecture using GMM-based attention instead of windowed attention to elevate synthesized performance. Experimental results indicate when the proposed techniques are applied the integrated system significantly raises the scores of acoustic quality (30$\%$ relative increase in mean opinion score) and native accent (68$\%$ relative preference) while retaining the voice identity of the non-native speaker. </p>
           </div>
         </div>
       </div>
@@ -95,9 +95,9 @@ p.thicker {font-weight: 900}
           <h2>System</h2>
           <div>
 		<p>baseline<a class="text-success" href="#2">[2]</a>:https://github.com/guanlongzhao/fac-via-ppg</p>
-		<p>proposed system1:CBHG encoder+GMM Attention</p>
-		<p>proposed system2:mel reference encoder + CBHG encoder+GMM Attention</p>
-		<p>proposed system3:mel and phone sequence reference encoder+CBHG encoder+GMM Attention</p>
+		<p>proposed System 1: Only structural adjustment is made. We replace the LSA with the GMM attention, and replace the original Tacotron2 encoder with CBHG network.</p>
+		<p>proposed System 2: In addition to structural modifications in System 1, the mel reference encoder is added.</p>
+		<p>proposed System 3: In addition to structural adjustments, both the mel and phoneme reference encoders are added.</p>
 		<br>
           </div>
         </div>
@@ -119,9 +119,9 @@ p.thicker {font-weight: 900}
                           <th></th>
                           <th class="text-center">ZHAA</th>
                           <th class="text-center">Baseline</th>
-			  <th class="text-center">proposed system1</th>
-			  <th class="text-center">proposed system2</th>
-			  <th class="text-center">proposed system3</th>
+			  <th class="text-center">System1</th>
+			  <th class="text-center">System2</th>
+			  <th class="text-center">System3</th>
 			  <th class="text-center">TTS</th>
                         </tr>
                       </thead>
